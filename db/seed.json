@@ -1,0 +1,40 @@
+{
+    "addressBook": {
+        "contact0": {
+            "phone": "270-555-1234",
+            "email": "email@email.com",
+            "firstName": "Ana",
+            "lastName": "Owens",
+            "address": {
+                "street": "123 Any Street",
+                "city": "Dickson",
+                "state": "TN",
+                "zipcode": "37055"
+            }
+        },
+        "contact1": {
+            "phone": "293-555-1234",
+            "email": "name@email.com",
+            "firstName": "Jesse",
+            "lastName": "Jackson",
+            "address": {
+                "street": "456 This Street",
+                "city": "Dickson",
+                "state": "TN",
+                "zipcode": "37055"
+            }
+        },
+        "contact2": {
+            "phone": "652-555-1234",
+            "email": "exciting@email.com",
+            "firstName": "Saul",
+            "lastName": "Goodman",
+            "address": {
+                "street": "789 That Street",
+                "city": "Dickson",
+                "state": "TN",
+                "zipcode": "37055"
+            }
+        }
+    }
+}
