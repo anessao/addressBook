@@ -10,7 +10,8 @@
                 "city": "Dickson",
                 "state": "TN",
                 "zipcode": "37055"
-            }
+            },
+            "uid": "JynEoAgMWDdrLwfNQmAfg20mN6U2"
         },
         "contact1": {
             "phone": "293-555-1234",
@@ -22,7 +23,8 @@
                 "city": "Dickson",
                 "state": "TN",
                 "zipcode": "37055"
-            }
+            },
+            "uid": "JynEoAgMWDdrLwfNQmAfg20mN6U2"
         },
         "contact2": {
             "phone": "652-555-1234",
@@ -34,7 +36,18 @@
                 "city": "Dickson",
                 "state": "TN",
                 "zipcode": "37055"
-            }
+            },
+            "uid": "jlIgTM4l2NPlkU1UZlp9UvFlIhx2"
+        }
+    },
+    "users": {
+        "user0": {
+            "uid": "JynEoAgMWDdrLwfNQmAfg20mN6U2",
+            "username": "a"
+        },
+        "user1": {
+            "uid": "jlIgTM4l2NPlkU1UZlp9UvFlIhx2",
+            "username": "b"
         }
     }
 }

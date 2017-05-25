@@ -26,11 +26,17 @@
 
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				      <ul class="nav navbar-nav navbar-right">
-			            <li><a href="#">Login/Register</a></li>
-			            <li><a href="#">Logout</a></li>
+			            <li><a href="#!/logout">Logout</a></li>
 			            <li><a href="#!/contacts/all">All Contacts</a></li>
 			            <li><a href="#!/contacts/new">Add New Contact</a></li>
 				      </ul>
+				      <ul class="nav navbar-nav navbar-right" ng-if="!user.uid">  <!-- shows if user.uid doesn't exist -->
+				    		<li><a ng-href="#!/auth">Login/Register</a></li>
+			      	</ul>
+
+
+
+
 				  </div><!-- /.container-fluid -->
 			</nav>
 	</div>
@@ -56,12 +62,14 @@
 	<script type="text/javascript" src="./javascripts/app.js"></script>
 	<script type="text/javascript" src="./javascripts/AppConfig.js"></script>
 	<script type="text/javascript" src="./javascripts/AppConstants.js"></script>
+	<script type="text/javascript" src="/javascripts/factories/AuthFactory.js"></script>
+	<script type="text/javascript" src="/javascripts/factories/UserFactory.js"></script>
 	<script type="text/javascript" src="/javascripts/factories/ItemFactory.js"></script>
 
+	<script type="text/javascript" src="./javascripts/controllers/AuthCtrl.js"></script>
 	<script type="text/javascript" src="./javascripts/controllers/ItemListCtrl.js"></script>
-	<!-- <script type="text/javascript" src="./javascripts/controllers/ItemViewCtrl.js"></script>
-	<script type="text/javascript" src="./javascripts/controllers/ItemEditCtrl.js"></script>
-	<script type="text/javascript" src="./javascripts/controllers/ItemNewCtrl.js"></script> -->
+	<script type="text/javascript" src="./javascripts/controllers/ContactEditCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/ContactNewCtrl.js"></script>
 	<script type="text/javascript" src="./javascripts/controllers/NavCtrl.js"></script>
 
 

@@ -1,9 +1,9 @@
-app.controller("ItemListCtrl", function($location, $scope, ItemFactory) {
+app.controller("ItemListCtrl", function($rootScope, $location, $scope, ItemFactory) {
 	
 	$scope.contacts = [];
 
 	let getItems = () => {
-	  ItemFactory.getItemList().then((itemz) => {
+	  ItemFactory.getItemList($rootScope.user.uid).then((itemz) => {
 	    $scope.contacts = itemz;
 	    console.log($scope.contacts);
 	  }).catch((error) => {
@@ -22,6 +22,9 @@ app.controller("ItemListCtrl", function($location, $scope, ItemFactory) {
   	});
   };
 
+  $scope.editItem = (id) => {
+  	$location.url("/contact/edit/contact0");
+  }
   // $scope.inputChange = (item) => {
   // 	ItemFactory.editItem(item).then(() => {
   // 	}).catch((error) => {
